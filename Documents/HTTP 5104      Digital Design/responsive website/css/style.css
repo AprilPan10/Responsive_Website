@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Poppins:wght@500&display=swap');
+/************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. GENERAL STYLE
+ * 2. HEADER STYLES
+ * 3. MAIN NAV STYLES
+ * 4. BANNER STYLES
+ * 5. ABOUT SECTION STYLES
+ * 6. SKILL SECTION STYLES
+ * 7. PROJECT SECTION STYLES
+ * 8. CONTACT SECTION STYLES
+ * 9. FOOTER STYLES 
+ * 10.BUTTON STYLES
+ * 11.MEDIA QUERIES
+ ***********************************************/
+
+/*. 1.GENERAL STYLES */
+
+html {
+    box-sizing: border-box;
+    font:normal 16px/1.5 'Poppins', sans-serif;
+}
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+body {
+    margin:0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 2.25em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.125em;
+}
+.page-wrapper {
+    max-width:1200px;
+    margin:0 auto;
+}
+.hidden {
+    position:absolute;
+    left:-10000px;
+    width:1px;
+    height:1px;
+}
+/*. 2.HEADER STYLES */
+.header-wrapper {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+}
+.hidden-block {
+    flex:1 0 0;
+}
+#logo {
+    flex: 1 0 0;
+}
+#logo img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+/*. 3.MAIN NAV STYLES */
+#main-navigation{
+    flex: 1 0 0;
+}
+.menu-toggle { 
+    display: none;
+}
+#main-navigation .menu {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+#main-navigation li {
+    display:inline-block;
+    margin-top: 4em;
+    margin-right:1em;
+}
+#main-navigation a:hover {
+    color:#ffc85f;
+}
+.menu a,
+.menu a:link{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+/*. 4.BANNER STYLES */
+#banner-wrapper{
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+    height: 450px;
+    background-color: #fff6de;
+}
+.banner-img {
+    margin-left: 5em;
+    margin-top: -2.25em;
+    width:345px;
+}
+.banner-text {
+    display: block;
+    float:right;
+    margin-right: 6em;
+    margin-top: 6em;
+    text-align: center;
+}
+.banner-text h1 span {
+    display: block;
+    white-space:pre-line;
+}
+.banner-text a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.banner-text p{
+    margin-top: -1em;
+    text-transform: uppercase;
+}
+/*. 5.ABOUT SECTION STYLES */
+#about {
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+}
+#about h2 {
+    margin-top: 2em;
+}
+#about p{
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+/*. 6.SKILL SECTION STYLES */
+#skill{
+    background-color: #fff6de;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+    padding: 3em;
+}
+.col-100{
+    width: 100%;
+    clear: both;
+    margin-left: 3em;
+}
+.skill-block{
+    position: relative;
+    width: 235px;
+    height: 280px;
+    border: 0.1px solid #000;
+    background: #fff6de;
+    box-shadow: 10px 8px 0 1px #ffe6a7;
+    transition: all 0.5s;
+}
+.skill-block:hover{
+    box-shadow: 0 0 0 0 #ffe6a7;
+    transform: translateX(4px);
+    transform: translateY(3px);
+}
+.col-33{
+    flex: 1 0 0;
+    text-align: center;
+}
+.col-33 p span{
+    display: block;
+    white-space:pre-line;
+    text-align: center;
+}
+/*. 7.PROJECT SECTION STYLES */
+#project {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    padding-left: 6.25em;
+    width: 1200px;
+    clear: both;
+}
+.projects {
+    flex: 1 0 0;
+}
+.page-title {
+    width: 100%;
+    clear:both;
+}
+#page-arrows {
+    display: inline-block;
+    margin-left: 3em;
+}
+.projects a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.75em;
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.img-hover-zoom {
+  height: 120px; 
+  overflow: hidden; 
+}
+
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
+#project h2{
+    display: inline-block;
+    margin-top: 3em;
+    margin-left: 1em;
+}
+#project h3 {
+    margin-left: 1em;
+}
+#project p {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#project a {
+    display: block;
+    margin: 0 5em;
+    text-align: center;
+}
+.project-block {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border: 0.1px solid #000;
+    background: #fff;
+    box-shadow: 6px 5px 0 1px #ffe6a7;
+}
+/*. 8.CONTACT SECTION STYLES */
+#contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 6.25em;
+    padding: 0 6.25em;
+}
+.contact-block {
+    position: relative;
+    width: 450px;
+    height: 600px;
+    border: 0.1px solid #000;
+    background: #fff;
+    box-shadow: 10px 8px 0 1px #ffe6a7;
+}
+.ghost-block {
+    position: relative;
+    margin-left: 5em;
+    flex: 1 0 0;
+    padding-top: 8em;
+}
+.col-50-1 h2 {
+    text-align: center;
+    margin-top: 1.5em;
+}
+.quote {
+    margin-top: -1em;
+    text-decoration: underline;
+}
+.title-wrapper{
+    margin-left: 2em;
+    text-transform: uppercase;
+    margin-top: 1.5em;
+}
+#name {
+    width: 325px;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-top: 1.25em;
+}
+#email {
+    width: 325px;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-top: 1.25em;
+}
+#phone {
+    width: 325px;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-top: 1.25em;
+}
+#comments {
+    width: 350px;
+    height: 100px;
+}
+/*. 9.FOOTER STYLES */
+#footer{
+    background-color: #ffde91;
+    margin-top: -5em;
+}
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+#socialmedia {
+    flex: 2 0 0;
+    margin-left: 3em;
+}
+#footer-navigation{
+    flex: 1 0 0;
+    margin-top: 5em;
+}
+#hidden-block {
+    flex:3 0 0;
+}
+.socialmedia-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+.icon-30{
+    flex: 1 0 0;
+    text-align: center;
+   
+}
+.icon-30 a {
+    color: #000;
+    font-size: 0.75em;
+    text-decoration: none;
+}
+.icon-30 span{
+    display: block;
+    white-space:pre-line;
+    font-size: 2.7em;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+#footer h2 {
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+#footer-navigation .footer-menu{
+    list-style: none;
+}
+.footer-menu a {
+    color: #000;
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.875em;
+}
+.footer-menu {
+    margin: 0;
+}
+#copyright{
+    text-align: center;
+    padding-bottom: 2em;
+    width: 100%;
+    clear: both;
+    margin-top: 2em;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+}
+/*. 10.BUTTON STYLES */
+.button {
+    border: 0.1px solid #000;
+    background: #fff;
+    box-shadow: 5px 4px 0 1px #ffe6a7;
+    padding: 0.125em 1em;
+    transition: all 0.3s;
+}
+.button:hover {
+    box-shadow: 0 0 0 0 #ffe6a7;
+    transform: translateX(4px);
+    transform: translateY(3px);
+}
+.ghost-button {
+    border: 0.1px solid #000;
+    background: #fff6de;
+    box-shadow: 5px 4px 0 1px #ffe6a7;
+    padding: 0.25em 0em;
+    margin-top: 30px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+#submit-btn {
+    border: 1px solid #000;
+    background: #fff;
+    box-shadow: 4px 3px 0 1px #ffe6a7;
+    padding: 0.25em 2em;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+#submit-btn:hover{
+    box-shadow: 0 0 0 0 #ffe6a7;
+    transform: translateX(4px);
+    transform: translateY(3px);
+}
+
+/* 11. MEDIA QUERIES */
+/* Tablet styles */
+
+@media screen and (max-width:990px){
+    html {
+        box-sizing: border-box;
+        font:normal 14px/1.5 'Poppins', sans-serif;
+}
+    .hidden-block {
+        display: none;
+}
+    #logo img{
+        float: left;
+        margin-left: 3em;
+}
+    .menu-toggle { 
+        display: block;
+        margin-top: 4em;
+        float: right;
+        border: none;
+        background-color: #fff;
+        margin-right: 4em;
+} 
+    #main-navigation .menu {
+        position: absolute;
+        left: -10000px; 
+}
+    #main-navigation .menu.show-small {
+        position:absolute; 
+        left: 80%;
+        top: 0;
+        bottom: 0;
+        width:auto;
+        height:auto;
+        margin-top: 6em;
+        transition: .25s ease-in-out;
+}
+    #main-navigation li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        border: 3px solid #fff6de;
+        width:  100px;
+}
+    #banner-wrapper{
+        margin-top: 4em;
+        width: 85%;
+        height: 600px;
+}
+    .banner-img {
+        display: block;
+        margin: 0 auto;
+        width:250px;
+ }
+    .banner-text {
+        display: block;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+}
+    #about {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        padding: 1em;
+}
+    #skill{
+        padding: 3em;
+}
+    .col-100{
+        margin-left: 3em;
+}
+    .skill-block{
+        margin-top: 2em;
+}
+    #contact  {
+        display: block;
+        margin: 0 auto;
+        flex: none;
+        padding: 0;
+        margin-top: 5em;
+ }
+    .contact-block {
+        display: block;
+        margin: 0 auto;
+}
+    .ghost-block {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        padding: 0;
+        margin-top: 3em;
+}
+    .col-50 {
+        display: block;
+        margin: 0 auto;
+        width:85%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+}
+
+    #footer{
+        background-color: #ffde91;
+        margin-top: 2em;
+}
+    #hidden-block {
+        display: none;
+}
+    .socialmedia-wrapper {
+        width: 60%;
+        margin-left: 5em;
+}
+    .icon-30 span{
+        font-size: 3em;
+}
+    .icon-30 a{
+        text-decoration: none;
+}
+    .socialmedia-wrapper {
+        padding: 0;
+   
+}
+    .ghost-button {
+        width: 160px;
+}
+
+}
+@media screen and (max-width:810px) { 
+    
+    #skill{
+        display:block;
+        margin: 0 auto;
+        margin-right: 0;
+}
+    .skill-block {
+        display: block;;
+        margin: 2em auto;
+}
+    #main-navigation .menu.show-small {
+        left: 75%;
+}
+    
+}
+/* Phone styles */
+@media screen and (max-width:440px){
+    html {
+        box-sizing: border-box;
+        font:normal 12px/1.5 'Poppins', sans-serif;
+    }
+     #logo img{
+        margin-left: 1em;
+         width: 90%;
+}
+    .menu-toggle { 
+        margin-right: 0;
+} 
+    #main-navigation .menu.show-small {
+       left: 70%;
+       margin-top: 8em;
+        
+}
+    #banner-wrapper{
+        display: inline-block;
+        margin: 2em auto;
+        width: 100%;
+        height: 400px;
+        background-color: #fff6de;
+}
+    .banner-img {
+        display: block;
+        margin: 0 auto;
+        width:150px;
+        
+}
+    .banner-text {
+        display: block;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+}
+    .banner-text p span{
+        display: block;
+        white-space:pre-line;
+}
+    #about {
+        display: block;
+        margin: 0 auto;
+}
+    .skill {
+        display: block;
+        margin: 0 auto;
+}
+    
+    .skill-block{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2em;
+}
+    .contact-block {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        margin: 1em;
+}
+    #name {
+        width: 80%;
+}
+    #email {
+        width: 80%;
+}
+    #phone {
+        width: 80%;
+}
+    #comments {
+        width: 80%;
+}
+   .wrapper {
+        display: block;
+        flex: none;
+}
+    #socialmedia{
+        display: block;
+        margin: 0 auto;
+        flex: none;
+        text-align: center;
+}
+    #footer-navigation{
+        display: block;
+        flex: none;
+        margin: 0 auto;
+        margin-top: 3em;
+        width: 20%;
+}
+    #hidden-block {
+        display: none;
+}
+    .footer-menu a {
+        line-height: 2.5em;
+}
+    .socialmedia-wrapper h3{
+        display: block;
+        margin: 1em auto;
+        width: 100%;
+        margin-left: 0;
+        padding-top: 2em;
+}
+    .socialmedia-wrapper {
+        display: block;
+        margin: 0 auto;
+}
+   .icon-30{
+        display: inline-block;
+        text-align: center;
+        flex: none;
+        margin-right: 1.5em;
+}
+    .icon-30:last-child{
+        margin-right: 0;
+}
+    #footer-navigation .footer-menu{
+        padding: 0;
+}
+    #copyright span {
+        display: block;
+        white-space:pre-line;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

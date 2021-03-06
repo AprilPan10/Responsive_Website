@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>My portfolio site</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/javascript.js" ></script>
+        <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/52eb7513f8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="page-wrapper">
+                <div class="header-wrapper">
+                    <div class= "hidden-block"></div>
+                    <div id="logo">
+                        <h2 id="site-name">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="logo of Shimeng Pan portfolio site" />
+                            </a>
+                        </h2>
+                    </div>
+                    <nav id="main-navigation">
+                        <button class="menu-toggle" onclick="toggleMenu()"><img src="images/hamburger%20nav.png" alt="hamburger navigation"/></button>
+                        <h3 class="hidden">Main navigation</h3>
+                        <ul class="menu">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skill">Skill</a></li>
+                            <li><a href="#project">Project</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="page-wrapper">
+            <main id="main">
+                <div id="banner-wrapper">
+                    <img src="images/image%20of%20shimeng.png" alt="image of Shimeng Pan" class="banner-img"/>
+                <div class= "banner-text">
+                    <h1 class="page-title">Welcome to<span>my portfolio site.</span></h1>
+                    <p>I'm a full stack web developer. <span>Ask Me Anything!</span></p>
+                    <a href="#about" class="button">About me</a>
+                </div>
+                </div>
+                <div class="columns" id="about">
+                    <article>
+                        <h2 class="ghost-button">Shimeng Pan</h2>
+                        <p>My name is Shimeng Pan. I am a full stack web developer creating effective visual websites for companies. My wide-ranging design abilities are to use digital tools and software to create original and appealing websites for a broad range of projects, including static website, dynamic website. I specialize in web design and web development.</p>
+                    </article>
+                </div>
+                <section class="columns centered" id="skill">
+                    <h2 class="col-100">Skill</h2>
+                    <div class="skill-block">
+                        <section class="col-33">
+                        <h3>Design</h3>
+                        <img src="images/skill%20first%20icon.png" alt="a women is drawing a photo"/>
+                        <p><span>Branding Design</span><span>Website Design</span><span>Editorial Design</span></p>
+                    </section>
+                    </div>
+                    <div class="skill-block">
+                        <section class="col-33">
+                        <h3>Front-end</h3>
+                        <img src="images/skill%20second%20icon.png" alt="a women is sitting in front of computer" />
+                        <p>HTML Coding<span>CSS Styling</span>
+                        JavaScript </p>
+                    </section>
+                    </div>
+                    <div class="skill-block">
+                        <section class="col-33">
+                        <h3>Back-end</h3>
+                        <img src="images/skill%20third%20icon.png" alt="A man is pointing a photo" />
+                        <p>C#<span>SQL</span></p>
+                    </section>
+                    </div>
+                </section>
+                <section class="columns centered" id="project">
+                    <div class="page-title">
+                        <h2>Project</h2>
+                        <div id="page-arrows">
+                            <img src="images/arrow%20left.png" alt="left arrow" />
+                            <img src="images/arrow%20right.png" alt="right arrow" />
+                        </div>
+                    </div>
+                    <div class="project-block">
+                         <section class="projects">
+                            <div class="img-hover-zoom">
+                                <img src="images/project%20first%20image.png" alt="ebi sushi brochure page" />
+                            </div>
+                            <h3>Sushi project</h3>
+                            <p>This the description of this project.</p>
+                            <a href="#" class="button">More</a>
+                        </section>
+                    </div>
+                    <div class="project-block">
+                         <section class="projects">
+                            <div class="img-hover-zoom">
+                                <img src="images/project%20second%20image.png" alt="close-up of ebi sushi brochure" />
+                            </div>
+                            <h3>Pet Project</h3>
+                            <p>This the description of this project.</p>
+                            <a href="#" class="button">More</a>
+                        </section>
+                    </div>
+                    <div class="project-block">
+                        <section class="projects">
+                            <div class="img-hover-zoom">
+                                <img src="images/project%20tird%20image.png" alt="close-up of chef making sushi" />
+                            </div>
+                            <h3>School Project</h3>
+                            <p>This the description of this project.</p>
+                            <a href="#" class="button">More</a>
+                        </section>
+                    </div>
+                    <div class="project-block">
+                        <section class="projects">
+                            <div class="img-hover-zoom">
+                                <img src="images/project%20fourth%20image.png" alt="whole ebi sushi image" />
+                            </div>
+                            
+                            <h3>Group Project</h3>
+                            <p>This the description of this project.</p>
+                            <a href="#" class="button">More</a>
+                        </section>
+                    </div>
+                    <div class="project-block">
+                        <section class="projects">
+                            <div class="img-hover-zoom">
+                                <img src="images/project%20tird%20image.png" alt="close-up of chef making sushi" />
+                            </div>
+                            <h3>Travel Project</h3>
+                            <p>This the description of this project.</p>
+                            <a href="#" class="button">More</a>
+                        </section>
+                    </div>
+                </section>
+                <section class="columns centered" id="contact">
+                    <div class="contact-block">
+                        <div class="col-50-1">
+                            <h2>Contact</h2>
+                            <form id="contac-form" method="post" action="#">
+                                <div class="title-wrapper">
+                                    <label for="name">Full Name</label>
+                                    <div>
+                                        <input type="text" id="name" name="name" placeholder="Your name here" />
+                                    </div>
+                                </div>
+                                <div class="title-wrapper">
+                                    <label for="email">Email</label>
+                                    <div>
+                                        <input type="email" id="email" name="email" placeholder="E.g. myemail @ email.com" />
+                                    </div>
+                                </div>
+                                <div class="title-wrapper">
+                                    <label for="phone">Phone Number</label>
+                                    <div>
+                                        <input type="text" id="phone" name="phone" placeholder="E.g. 647-836-9411" />
+                                    </div>
+                                </div>
+                                <div class="title-wrapper">
+                                    <label for="comments">Leave a message</label>
+                                    <div>
+                                        <textarea id="comments" name="comments"></textarea>
+                                    </div>
+                                </div>
+                                <div class="submit-button">
+                                    <button type="submit" id="submit-btn" name="submit-btn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ghost-block">
+                        <div class="col-50">
+                            <h2>What they say about me</h2>
+                            <p class="quote"><em>FROM  PROFESSOR</em></p>
+                            <p>Shimeng Pan is a hard working, talented students in my class. She is really good at web design and web development. She is creative and can solve questions by herself. She will be a good employer in your company</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer id="footer">
+            <div class="page-wrapper">
+                <div class="wrapper">
+                    <div id="hidden-block"></div>
+                    <div id="socialmedia">
+                        <div class="socialmedia-wrapper">
+                            <h2>Follow Me</h2>
+                            <div class="icon-30">
+                            <a href="https://www.instagram.com/panshimengmeng/"><span class="fab fa-instagram-square"></span>Instagram</a>
+                            </div>
+                            <div class="icon-30">
+                            <a href="https://www.facebook.com/panshimengmeng"><span class="fab fa-facebook-square"></span>Facebook</a>
+                            </div>
+                            <div class="icon-30">
+                            <a href="https://www.linkedin.com/"><span class="fab fa-linkedin"></span>Linkedin</a>
+                            </div>
+                        </div>
+                    </div>
+                <nav id="footer-navigation">
+                    <h2 class="hidden">Footer navigation</h2>
+                    <ul class="footer-menu">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+               <div id="copyright"><span>&copy; Copyright 2012 - 2020</span>  |   Shimeng Pan PORTFOLIO   |   All Rights Reserved </div>
+            </div>
+        </footer>
+    </body>
+</html>
