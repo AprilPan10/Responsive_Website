@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width">
         <title>My portfolio site</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="js/javascript.js" ></script>
+        <link rel="stylesheet" href="css/glide.core.min.css">
         <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/52eb7513f8.js" crossorigin="anonymous"></script>
+        <script src="js/javascript.js"></script>
     </head>
     <body>
         <header id="header">
@@ -74,64 +75,73 @@
                     </section>
                     </div>
                 </section>
-                <section class="columns centered" id="project">
+                <section id="project">
                     <div class="page-title">
                         <h2>Project</h2>
-                        <div id="page-arrows">
-                            <img src="images/arrow%20left.png" alt="left arrow" />
-                            <img src="images/arrow%20right.png" alt="right arrow" />
+                    </div>
+                    <div class="glide">
+                        <div id="page-arrows" class="glide__arrows" data-glide-el="controls">
+                            <img src="images/left-arrow-svgrepo-com.svg" alt="left arrow" class="glide__arrow glide__arrow--left" data-glide-dir="<" width="25" id="left"/>
+                            <img src="images/right-arrow-svgrepo-com.svg" alt="right arrow" class="glide__arrow glide__arrow--right" data-glide-dir=">" width="25" id="right"/>
                         </div>
-                    </div>
-                    <div class="project-block">
-                         <section class="projects">
-                            <div class="img-hover-zoom">
-                                <img src="images/project%20first%20image.png" alt="ebi sushi brochure page" />
+                        <div class="glide__track" data-glide-el="track">
+                            <div class="glide__slides">
+                               
+                                <div class="project-block glide__slide">
+                                 <section class="projects">
+                                    <div class="img-hover-zoom">
+                                        <img src="images/project%20first%20image.png" alt="ebi sushi brochure page" />
+                                    </div>
+                                    <h3>Sushi project</h3>
+                                    <p>This the description of this project.</p>
+                                    <a href="#" class="button">More</a>
+                                </section>
+                                </div>
+                               
+                                <div class="project-block glide__slide">
+                                 <section class="projects">
+                                    <div class="img-hover-zoom">
+                                        <img src="images/project%20second%20image.png" alt="close-up of ebi sushi brochure" />
+                                    </div>
+                                    <h3>Pet Project</h3>
+                                    <p>This the description of this project.</p>
+                                    <a href="#" class="button">More</a>
+                                </section>
+                                </div>
+                
+                                <div class="project-block glide__slide">
+                                    <section class="projects">
+                                        <div class="img-hover-zoom">
+                                            <img src="images/project%20tird%20image.png" alt="close-up of chef making sushi" />
+                                        </div>
+                                        <h3>Project</h3>
+                                        <p>This the description of this project.</p>
+                                        <a href="#" class="button">More</a>
+                                    </section>
+                                </div>
+                                <div class="project-block glide__slide">
+                                    <section class="projects">
+                                        <div class="img-hover-zoom">
+                                            <img src="images/project%20fourth%20image.png" alt="whole ebi sushi image" />
+                                        </div>
+
+                                        <h3>Group Project</h3>
+                                        <p>This the description of this project.</p>
+                                        <a href="#" class="button">More</a>
+                                    </section>
+                                </div>
+                                <div class="project-block glide__slide">
+                                    <section class="projects">
+                                        <div class="img-hover-zoom">
+                                            <img src="images/project%20tird%20image.png" alt="close-up of chef making sushi" />
+                                        </div>
+                                        <h3>Travel Project</h3>
+                                        <p>This the description of this project.</p>
+                                        <a href="#" class="button">More</a>
+                                    </section>
+                                </div>
                             </div>
-                            <h3>Sushi project</h3>
-                            <p>This the description of this project.</p>
-                            <a href="#" class="button">More</a>
-                        </section>
-                    </div>
-                    <div class="project-block">
-                         <section class="projects">
-                            <div class="img-hover-zoom">
-                                <img src="images/project%20second%20image.png" alt="close-up of ebi sushi brochure" />
-                            </div>
-                            <h3>Pet Project</h3>
-                            <p>This the description of this project.</p>
-                            <a href="#" class="button">More</a>
-                        </section>
-                    </div>
-                    <div class="project-block">
-                        <section class="projects">
-                            <div class="img-hover-zoom">
-                                <img src="images/project%20tird%20image.png" alt="close-up of chef making sushi" />
-                            </div>
-                            <h3>School Project</h3>
-                            <p>This the description of this project.</p>
-                            <a href="#" class="button">More</a>
-                        </section>
-                    </div>
-                    <div class="project-block">
-                        <section class="projects">
-                            <div class="img-hover-zoom">
-                                <img src="images/project%20fourth%20image.png" alt="whole ebi sushi image" />
-                            </div>
-                            
-                            <h3>Group Project</h3>
-                            <p>This the description of this project.</p>
-                            <a href="#" class="button">More</a>
-                        </section>
-                    </div>
-                    <div class="project-block">
-                        <section class="projects">
-                            <div class="img-hover-zoom">
-                                <img src="images/project%20tird%20image.png" alt="close-up of chef making sushi" />
-                            </div>
-                            <h3>Travel Project</h3>
-                            <p>This the description of this project.</p>
-                            <a href="#" class="button">More</a>
-                        </section>
+                        </div>
                     </div>
                 </section>
                 <section class="columns centered" id="contact">
@@ -210,5 +220,27 @@
                <div id="copyright"><span>&copy; Copyright 2012 - 2020</span>  |   Shimeng Pan PORTFOLIO   |   All Rights Reserved </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script>
+            const config = {
+                type: "carousel",
+                perView: 5,
+                breakpoints:{
+                    1120: {
+                      perView: 4 
+                    },
+                    805: {
+                      perView: 3 
+                    },
+                    620: {
+                      perView: 2 
+                    },
+                    350: {
+                      perView: 1 
+                    }
+                }
+            };
+            new Glide('.glide',config).mount()
+        </script>
     </body>
 </html>

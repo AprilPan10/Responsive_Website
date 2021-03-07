@@ -185,7 +185,6 @@ h3 {
     flex-flow: row wrap;
     justify-content:space-around;
     padding-left: 6.25em;
-    width: 1200px;
     clear: both;
 }
 .projects {
@@ -196,8 +195,16 @@ h3 {
     clear:both;
 }
 #page-arrows {
-    display: inline-block;
-    margin-left: 3em;
+   display: flex-start;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    margin-left: 2em;
+}
+#right:hover{
+  filter: invert(0%) sepia(82%) saturate(7428%) hue-rotate(52deg) brightness(88%) contrast(116%);
+}
+#left:hover{
+   filter: invert(0%) sepia(82%) saturate(7428%) hue-rotate(52deg) brightness(88%) contrast(116%); 
 }
 .projects a {
     text-decoration: none;
@@ -238,8 +245,7 @@ h3 {
 }
 .project-block {
     position: relative;
-    width: 200px;
-    height: 300px;
+    padding: 0.5em;
     border: 0.1px solid #000;
     background: #fff;
     box-shadow: 6px 5px 0 1px #ffe6a7;
@@ -416,8 +422,10 @@ h3 {
     transform: translateY(3px);
 }
 
+
 /* 11. MEDIA QUERIES */
 /* Tablet styles */
+
 
 @media screen and (max-width:990px){
     html {
@@ -542,9 +550,13 @@ h3 {
     .ghost-button {
         width: 160px;
 }
+    .project-block {
+        padding: 0.5em;
+   
+}
 
 }
-@media screen and (max-width:810px) { 
+@media screen and (max-width:805px) { 
     
     #skill{
         display:block;
@@ -558,8 +570,14 @@ h3 {
     #main-navigation .menu.show-small {
         left: 75%;
 }
+    .project-block {
+        padding: 0.5em;
+      
+   
+}
     
 }
+
 /* Phone styles */
 @media screen and (max-width:440px){
     html {
@@ -683,6 +701,10 @@ h3 {
         display: block;
         white-space:pre-line;
  }
+    .project-block {
+        padding: 0.5em;
+   
+}
 }
 
 
