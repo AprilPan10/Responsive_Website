@@ -1,0 +1,354 @@
+.lobby {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.side_nav_div {
+  position: relative;
+  height: 100vh;
+  width: 20%;
+  /* padding: 20px; */
+  background-color: lightgray;
+}
+
+.video_chat_div {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+
+  /* display: inline-block;
+    border: 1px solid black;
+    width: 62vw;
+    height: 60vh;
+    vertical-align: top; */
+}
+
+.text_chat_div {
+  width: 0%;
+  /* width: 35%; */
+  background-color: #fbfbff;
+  /* padding: 10px; */
+  height: 100vh;
+  /* display: inline-block;
+    border: 1px solid black;
+    width: 35vw;
+    height: 60vh;
+    vertical-align: top; */
+}
+
+.text_chat_interface_div {
+  display: inline-block;
+  width: 100%;
+  height: 90%;
+  vertical-align: top;
+}
+
+.control_div {
+  width: 100%;
+  height: 100px;
+  background-color: #5d5d5d;
+  position: absolute;
+  bottom: 0;
+}
+/* 
+.text_chat_users_list_div {
+    display: inline-block;
+    border: 1px solid black;
+    width: 27%;
+    height: 70%;
+    vertical-align: top;
+} */
+
+.text_chat_users_list {
+  list-style: none;
+  margin: 10px auto;
+  font-size: 20px;
+}
+
+.text_chat_message_div {
+  border-top: 2px solid #ddd;
+  height: 92%;
+  overflow: auto;
+  vertical-align: bottom;
+  padding: 0 15px;
+  position: relative;
+}
+
+.text_chat_div_heading {
+  display: inline-block;
+}
+
+.disconnect_bun_div {
+  position: absolute;
+  display: block;
+  bottom: 20px;
+}
+
+.join_message,
+.disconnect_message {
+  color: #aaa;
+}
+
+.text_message_wrapper {
+  margin: 10px auto;
+}
+
+.text_message_user {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.text_message_time {
+  color: #aaa;
+}
+
+.text_chat_input_div {
+  /* height: 8%; */
+  /* border-top: 2px solid #ddd; */
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+.text_chat_input_div form {
+  display: flex;
+  /* margin: 5px auto; */
+}
+
+.text_chat_input_field {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.4em 0.8em;
+  width: 80%;
+  display: block;
+}
+
+.text_chat_submit_btn {
+  width: 10%;
+  display: block;
+}
+
+.text_chat_div {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 20%;
+  overflow-x: hidden;
+  transition: 0.5s;
+  /* padding-top: 60px; */
+}
+
+.text_chat_div a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  /* color: #818181; */
+  display: block;
+  transition: 0.3s;
+}
+
+.text_chat_div a:hover {
+  color: #f1f1f1;
+}
+
+.text_chat_div .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  position: absolute;
+  bottom: 0;
+  background-color: magenta;
+  color: white;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+}
+
+/************** video layout **********/
+
+.videoGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.video {
+  height: 40%;
+}
+
+/* Index css */
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+.left {
+  flex: 1 0 0;
+  width: 45%;
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+}
+.left h1 {
+  font-size: 150px;
+  text-align: center;
+}
+.left p {
+  text-align: center;
+  font: normal 16px/1.5 "Poppins", sans-serif;
+  margin-top: -5em;
+  text-transform: uppercase;
+}
+.socialmedia {
+  text-align: center;
+  margin-top: 20em;
+}
+.socialmedia i {
+  font-size: 30px;
+  padding: 20px;
+  color: #fff;
+}
+.form a {
+  border: 0.1px solid #000;
+  border-radius: 3px;
+  background: #000;
+  padding: 1em 2em;
+  color: #fff;
+  transition: all 0.3s;
+  font: normal 16px/1.5 "Poppins", sans-serif;
+  text-decoration: none;
+}
+.button {
+  border: 0.1px solid #000;
+  border-radius: 3px;
+  background: #000;
+  padding: 1em 2em;
+  color: #fff;
+  transition: all 0.3s;
+  font: normal 16px/1.5 "Poppins", sans-serif;
+  text-decoration: none;
+}
+.right {
+  flex: 1 0 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.area {
+  margin-bottom: 3em;
+}
+.area input {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+}
+span {
+  font-size: 80px;
+}
+.form {
+  margin-top: 20em;
+}
+.menu li {
+  display: inline-block;
+  font: normal 16px/1.5 "Poppins", sans-serif;
+  padding-right: 10px;
+}
+ul {
+  padding-inline-start: 0;
+}
+.menu a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.dot-flashing {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #fff;
+  animation: dotFlashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+  margin: 0 auto;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #fff;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #000;
+  color: #000;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #fff;
+  }
+  50%,
+  100% {
+    background-color: #000;
+  }
+}
+@media (max-width: 800px) {
+  .left {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .right {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .form {
+    margin-top: 22em;
+  }
+  .menu {
+    margin-top: -42em;
+  }
+  .menu a {
+    color: #fff;
+  }
+  .left h1 {
+    font-size: 130px;
+  }
+}
